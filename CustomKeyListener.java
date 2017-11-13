@@ -118,7 +118,6 @@ class CustomKeyListener extends JPanel implements KeyListener{
     		  rightpressed = false;
     	  }
     	  if (uppressed = true) {
-    		  canvas.pitch(1);
     		  uppressed = false;
     	  }
       }
