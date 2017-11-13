@@ -44,14 +44,12 @@ class CustomKeyListener extends JPanel implements KeyListener{
 			if (!downpressed) {
 				uppressed = true;
 				canvas.updateChangey(-4);	
-				canvas.pitch(1);
 			}
 		}
 		else if (key == KeyEvent.VK_DOWN) {
 			if (!uppressed) {
 				downpressed = true;	
 				canvas.updateChangey(4);
-				canvas.pitch(-1);
 			}
     	}
 		if (key == KeyEvent.VK_SPACE) {
@@ -78,11 +76,9 @@ class CustomKeyListener extends JPanel implements KeyListener{
         		  rightpressed = false;
         	  }
         	  if (uppressed) {
-        		  canvas.pitch(-1);
         		  uppressed = false;
         	  }
         	  else if (downpressed) {
-        		  canvas.pitch(1);
         		  downpressed = false;
         	  }
         	  
